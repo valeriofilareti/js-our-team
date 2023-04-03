@@ -1,3 +1,6 @@
+const teamList = document.getElementById('team-list')
+
+
 const team = [
   {
     name: 'Wayne Barnett',
@@ -35,6 +38,13 @@ for (i in team) {
   const person = team[i]
   for (key in person) {
     console.log(key + ': ' + person[key]);
+
+    teamList.innerHTML += `
+    <li>${key}: ${person[key]}</li>
+    `
   }
   console.log('-----------------');
+  teamList.innerHTML += `
+    <li>-----------------------</li>
+    `
 }
