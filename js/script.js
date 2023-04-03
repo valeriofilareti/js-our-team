@@ -36,4 +36,5 @@ for (i in team) {
   for (key in person) {
     console.log(key + ': ' + person[key]);
   }
+  console.log('-----------------');
 }
